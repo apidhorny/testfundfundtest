@@ -410,7 +410,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #ccc url(../img/reservebg.jpg) no-repeat 50% 50%;
+  background: url(reservebg.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
