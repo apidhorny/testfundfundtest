@@ -388,7 +388,7 @@ body {
   background-size: cover;
   position: relative;
   min-height: 100vh;
-
+  /* The Modal (background) */
 }
 
 .section-header .section-inner {
