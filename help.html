@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Допомога</title>
         <link rel="stylesheet" href="help.css" />
-        <link rel="icon" href="fav.png" type="image/x-icon" />
+        <link rel="icon" href="/fav.png" type="image/x-icon" />
     </head>
     <body>
-        <section class="section-outer section-header">
+        <div class="section-outer section-header">
             <div class="intro__media">
                 <video
                     class="intro__media-video"
@@ -22,22 +22,35 @@
             <div class="section-inner">
                 <!-- !HEADER -->
                 <div class="section-header-top">
-                    <div class="section-header-top-left">
-                        <div class="logo">
-                            <a href="index.html"
-                                ><img
-                                    class="logo-img"
-                                    src="logo.gif"
-                                    alt="logo"
-                            /></a>
-                            <div class="section-header-title">
-                                <a href="index.html">
-                                    Благодійний фонд Івана Лозового</a
+                    <div class="logo">
+                        <a href="index.html"
+                            ><img class="logo-img" src="logo.gif" alt="logo"
+                        /></a>
+                        <div class="section-header-title">
+                            <a href="index.html">
+                                Благодійний фонд <br />
+                                Івана Лозового</a
+                            >
+                            <div class="fb">
+                                <a
+                                    href="https://www.facebook.com/FondLozowy"
+                                    target="_blank"
                                 >
+                                    <img src="fbmain.png" alt="" />
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- ? icons for language -->
+                    <!-- Menu -->
+                    <div class="main-menu">
+                        <ul class="main-menu__list">
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="about.html">Про Фонд</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Menu -->
+                    <!-- Icons for language -->
                     <div class="section-header-top-language">
                         <div class="section-header-top-language__ua">
                             <a href="#">
@@ -46,35 +59,60 @@
                         </div>
                         <div class="section-header-top-language__en">
                             <a href="#">
-                                <img src="en.png" alt="uk" />
+                                <img src="enTwo.jpg" alt="uk" />
                             </a>
                         </div>
                     </div>
-                    <!-- ? /icons for language -->
+                    <!-- /Icons for language -->
+                </div>
+                <!-- <div class="section-header-top">
+                    
+                    <div class="section-header-top-left">
+                        <div class="logo">
+                            <a href="/index.html"
+                                ><img
+                                    class="logo-img"
+                                    src="./img/logo.gif"
+                                    alt="logo"
+                            /></a>
+                            <div class="section-header-title">
+                                <a href="/index.html">
+                                    Благодійний фонд Івана Лозового</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-header-top-language">
+                        <div class="section-header-top-language__ua">
+                            <a href="#">
+                                <img src="./img/uk.png" alt="uk" />
+                            </a>
+                        </div>
+                        <div class="section-header-top-language__en">
+                            <a href="#">
+                                <img src="./img/en.png" alt="uk" />
+                            </a>
+                        </div>
+                    </div>
+                  
                     <div class="section-header-top-right">
                         <ul>
                             <li>
-                                <a href="activity.html">Діяльність фонду</a>
+                                <a href="./activity.html">Діяльність фонду</a>
                             </li>
-                            <li><a href="index.html">На головну</a></li>
+                            <li><a href="./index.html">На головну</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <!-- !/HEADER -->
                 <!-- !CONTENT -->
+                <div class="content-header">
+                    <h1>Допомога медичним установам</h1>
+                </div>
                 <div class="section-header-content">
                     <!-- ? GALLERY -->
                     <div class="content-gallery">
-                        <!-- ?MODAL  -->
-                        <!-- <div class="modal">
-                            <span class="close">×</span>
-                            <img
-                                src="https://cdn.sm-news.ru/wp-content/uploads/2019/11/24/1080p-hd-test-video-seriously-this-is-only-a-test-1300x675.jpg"
-                                class="modal-content"
-                            />
-                            <div id="caption">12.12.2020 - Принтер в Школу</div>
-                        </div> -->
-                        <!-- ? /MODAL -->
                         <div class="foto-1 foto">
                             <img src="rocks.jpg" alt="nature" />
                             <div class="subtName">Принтер в школу - 1</div>
@@ -83,7 +121,7 @@
                         <div class="foto-2 foto">
                             <img src="nature.jpg" alt="" />
                             <div class="subtName">Принтер в школу - 2</div>
-                            <button class="closeBtn2">&#10060;</button>
+                            <button class="closeBtn">&#10060;</button>
                         </div>
                         <div class="foto-3 foto">
                             <img src="nature.jpg" alt="" />
@@ -150,66 +188,148 @@
                     <!-- ? SIDEBAR -->
                     <div class="content-sidebar">
                         <ul>
-                            <li class="li-1">
+                            <li class="li-1 li">
                                 12.12.2020 - <span>Принтер в Школу - 1</span>
                             </li>
-                            <li class="li-2">
+                            <li class="li-2 li">
                                 11.12.2020 - <span>Принтер в Школу - 2</span>
                             </li>
-                            <li class="li-3">
+                            <li class="li-3 li">
                                 10.12.2020 - <span>Принтер в Школу - 3</span>
                             </li>
-                            <li class="li-4">
+                            <li class="li-4 li">
                                 09.12.2020 - <span>Принтер в Школу - 4</span>
                             </li>
-                            <li>08.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>07.11.2020 - <span>Принтер в Школу</span></li>
-                            <li>06.09.2020 - <span>Принтер в Школу</span></li>
-                            <li>05.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>03.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>12.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>11.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>10.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>09.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>08.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>07.11.2020 - <span>Принтер в Школу</span></li>
-                            <li>06.09.2020 - <span>Принтер в Школу</span></li>
-                            <li>05.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>03.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>12.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>11.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>10.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>09.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>08.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>07.11.2020 - <span>Принтер в Школу</span></li>
-                            <li>06.09.2020 - <span>Принтер в Школу</span></li>
-                            <li>05.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>03.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>12.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>11.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>10.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>09.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>08.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>07.11.2020 - <span>Принтер в Школу</span></li>
-                            <li>06.09.2020 - <span>Принтер в Школу</span></li>
-                            <li>05.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>03.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>12.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>11.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>10.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>09.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>08.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>07.11.2020 - <span>Принтер в Школу</span></li>
-                            <li>06.09.2020 - <span>Принтер в Школу</span></li>
-                            <li>05.12.2020 - <span>Принтер в Школу</span></li>
-                            <li>03.12.2020 - <span>Принтер в Школу</span></li>
+                            <li class="li">
+                                08.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                07.11.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                06.09.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                05.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                03.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                12.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                11.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                10.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                09.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                08.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                07.11.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                06.09.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                05.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                03.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                12.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                11.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                10.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                09.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                08.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                07.11.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                06.09.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                05.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                03.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                12.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                11.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                10.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                09.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                08.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                07.11.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                06.09.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                05.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                03.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                12.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                11.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                10.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                09.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                08.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                07.11.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                06.09.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                05.12.2020 - <span>Принтер в Школу</span>
+                            </li>
+                            <li class="li">
+                                03.12.2020 - <span>Принтер в Школу</span>
+                            </li>
                         </ul>
                     </div>
                     <!-- ? /SIDEBAR -->
                 </div>
                 <!-- !/CONTENT -->
             </div>
-        </section>
+        </div>
         <script src="helpPage.js"></script>
     </body>
 </html>

@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Благодійний фонд Івана Лозовго</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.css" />
         <link rel="icon" href="fav.png" type="image/x-icon" />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
@@ -12,7 +13,7 @@
         />
     </head>
     <body>
-        <section class="section-outer section-header">
+        <div class="section-outer section-header">
             <div class="intro__media">
                 <video
                     class="intro__media-video"
@@ -31,11 +32,78 @@
                         /></a>
                         <div class="section-header-title">
                             <a href="index.html">
-                                Благодійний фонд Івана Лозового</a
+                                Благодійний фонд <br />
+                                Івана Лозового</a
                             >
+
+                            <!-- <div class="socials">
+                                <ul class="socials-wrapper">
+                                    <li class="socials-wrapper__item">
+                                        <a
+                                            href="https://www.facebook.com/FondLozowy"
+                                            target="_blank"
+                                            class="socials-wrapper__item-link"
+                                            ><svg
+                                                height="50px"
+                                                version="1.1"
+                                                viewBox="0 0 60 60"
+                                                width="50px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            >
+                                                <title />
+                                                <desc />
+                                                <defs />
+                                                <g
+                                                    fill="none"
+                                                    fill-rule="evenodd"
+                                                    id="Page-1"
+                                                    stroke="red"
+                                                    stroke-width="1"
+                                                >
+                                                    <g
+                                                        id="Facebook"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        transform="translate(1.000000, 1.000000)"
+                                                    >
+                                                        <path
+                                                            d="M39.0432,58 L39.0432,35.696 L46.2462,35.696 L47.3202,27.003 L39.0432,27.003 L39.0432,21.454 C39.0432,18.94 39.7132,17.225 43.1872,17.225 L47.6142,17.219 L47.6142,9.45 C46.8472,9.342 44.2202,9.102 41.1612,9.102 C34.7782,9.102 30.4082,13.157 30.4082,20.596 L30.4082,27.003 L23.1822,27.003 L23.1822,35.696 L30.4082,35.696 L30.4082,58 L39.0432,58 L39.0432,58 Z"
+                                                            id="Stroke-1"
+                                                        />
+                                                        <path
+                                                            d="M54,58 L4,58 C1.791,58 0,56.209 0,54 L0,4 C0,1.791 1.791,0 4,0 L54,0 C56.209,0 58,1.791 58,4 L58,54 C58,56.209 56.209,58 54,58 L54,58 Z"
+                                                            id="Stroke-99"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                            <div class="fb">
+                                <a
+                                    href="https://www.facebook.com/FondLozowy"
+                                    target="_blank"
+                                >
+                                    <img src="fbmain.png" alt="" />
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!-- ?icons for language -->
+
+                    <!-- Menu -->
+                    <div class="main-menu">
+                        <ul class="main-menu__list">
+                            <li><a href="about.html">Про Фонд</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Menu -->
+                    <!-- Icons for language -->
                     <div class="section-header-top-language">
                         <div class="section-header-top-language__ua">
                             <a href="#">
@@ -44,174 +112,104 @@
                         </div>
                         <div class="section-header-top-language__en">
                             <a href="#">
-                                <img src="en.png" alt="uk" />
+                                <img src="enTwo.jpg" alt="uk" />
                             </a>
                         </div>
                     </div>
-                    <!-- ?/icons for language -->
-                    <!-- ?social icons -->
-                    <div class="socials">
-                        <ul class="socials-wrapper">
-                            <li class="socials-wrapper__item">
-                                <a
-                                    href="https://www.facebook.com/FondLozowy"
-                                    target="_blank"
-                                    class="socials-wrapper__item-link"
-                                    ><svg
-                                        width="9"
-                                        height="17"
-                                        viewBox="0 0 9 17"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836 2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z"
-                                            fill="#B6BAC7"
-                                        />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-wrapper__item">
-                                <a
-                                    href="tel:+380984652533"
-                                    class="socials-wrapper__item-link"
-                                    ><svg
-                                        version="1.1"
-                                        id="Capa_1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px"
-                                        y="0px"
-                                        width="18px"
-                                        height="15px"
-                                        viewBox="0 0 477.156 477.156"
-                                        style="
-                                            enable-background: new 0 0 477.156
-                                                477.156;
-                                        "
-                                        xml:space="preserve"
-                                    >
-                                        <g>
-                                            <path
-                                                d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031
-                   l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656
-                   l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659
-                   C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781
-                   c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938
-                   C474.946,420.878,480.571,397.035,475.009,380.316z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-wrapper__item">
-                                <a
-                                    href="mailto:fondlozowy@gmail.com"
-                                    class="socials-wrapper__item-link"
-                                    ><svg
-                                        version="1.1"
-                                        id="Capa_1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px"
-                                        y="0px"
-                                        width="30px"
-                                        height="23px"
-                                        viewBox="0 0 512 512"
-                                        style="
-                                            enable-background: new 0 0 512 512;
-                                        "
-                                        xml:space="preserve"
-                                    >
-                                        <g>
-                                            <path
-                                                d="M448,64H64C28.656,64,0,92.656,0,128v256c0,35.344,28.656,64,64,64h384c35.344,0,64-28.656,64-64V128
-                   C512,92.656,483.344,64,448,64z M342.656,234.781l135.469-116.094c0.938,3,1.875,6,1.875,9.313v256
-                   c0,2.219-0.844,4.188-1.281,6.281L342.656,234.781z M448,96c2.125,0,4,0.813,6,1.219L256,266.938L58,97.219
-                   C60,96.813,61.875,96,64,96H448z M33.266,390.25C32.828,388.156,32,386.219,32,384V128c0-3.313,0.953-6.313,1.891-9.313
-                   L169.313,234.75L33.266,390.25z M64,416c-3.234,0-6.172-0.938-9.125-1.844l138.75-158.563l51.969,44.531
-                   C248.578,302.719,252.297,304,256,304s7.422-1.281,10.406-3.875l51.969-44.531l138.75,158.563C454.188,415.062,451.25,416,448,416
-                   H64z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- ?/social icons -->
+                    <!-- /Icons for language -->
                 </div>
                 <!-- !/HEADER -->
                 <!-- !CONTENT -->
-                <div class="section-header-content">
-                    <div class="section-header-wrapper">
-                        <div class="section-header-wrapper__top-title">
-                            <div
-                                class="section-header-wrapper__top-title__left"
-                            >
-                                <p>
-                                    Засновником і директором Благодійної
-                                    організації "Благодійний фонд імені Івана
-                                    Григоровича Лозового" є Іван Лозовий, який
-                                    народився в США, в 1991-му році переїхав в
-                                    Україну і в 1997-му році прийняв українське
-                                    громадянство.
-                                </p>
-                                <p>
-                                    Останні роки Фонд приділяє особливу увагу
-                                    "малій батьківщині" Івана Григоровича,
-                                    Сумщині, допомагає навчальним і культурним
-                                    закладам, музеям, художникам, громадським
-                                    активістам.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="section-header-wrapper__button">
-                            <a
-                                href="activity.html"
-                                class="btn-main"
-                                target="_blank"
-                                >Діяльність Фонду <span> &#128072;</span>
-                            </a>
-                        </div>
-                        <div class="section-header-wrapper__subtitle">
-                            Згідно Статуту Фонду метою його діяльності є
-                            здійснення благодійної діяльності у сферах надання
-                            допомоги українським військовим, у реалізації
-                            громадських ініціатив, спрямованих на становлення
-                            громадянського суспільства та демократичного устрою
-                            в Україні, розвиток територіальних громад. Фонд
-                            названий іменем батька Івана Лозового, який
-                            народився на Сумщині, служив в британської армії в
-                            Німеччині і переїхав до США, де він створив сім'ю і
-                            успішно налагодив власну справу в сферах ремонту та
-                            інвестування в нерухомості. Благодійна організація
-                            "Благодійний фонд імені Івана Григоровича Лозового"
-                            зареєстрована як громадська організація 24-го квітня
-                            2015 р. 17-го грудня 2015-го року Фонду надано
-                            статус неприбуткової організації і внесено до
-                            державного Реєстру неприбуткових установ та
-                            організацій.
-                        </div>
+                <div class="content-header">
+                    <h1>Благодійний Фонд Івана Лозового - допоміг:</h1>
+                </div>
+                <div class="content">
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/2014_Moscow_school_shooting_04.jpg/1200px-2014_Moscow_school_shooting_04.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">Медичним установам</button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="http://static.kr-rada.gov.ua/cache/news_photo/40/28731-1200x800-2.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">Громадам</button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="https://i0.wp.com/www.zb.zt.ua/wp-content/uploads/2018/10/IMG_9455_1.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">Закладам культури</button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="./help.html"
+                            ><img
+                                src="https://vezha.ua/wp-content/uploads/2019/08/89C6E7DB-42D8-4B4A-B798-486443F8E3B7_cx0_cy2_cw0_w1200_s.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="./help.html"
+                            ><button class="btn">Школам</button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="http://7chudes.in.ua/wp-content/uploads/2015/02/1252937135_ua.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">
+                                Іншим освітнім закладам
+                            </button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="https://z4h5g2w8.stackpathcdn.com/wp-content/uploads/2020/04/vizyt-komanduvannya-suhoputnyh-vijsk-u-yidalnyu-dlya-ofitseriv.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">Військовим</button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="https://z4h5g2w8.stackpathcdn.com/wp-content/uploads/2020/04/vizyt-komanduvannya-suhoputnyh-vijsk-u-yidalnyu-dlya-ofitseriv.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">Адресна допомога</button></a
+                        >
+                    </div>
+                    <div class="item">
+                        <a href="help.html"
+                            ><img
+                                src="https://ukranews.com/upload/news/2019/05/16/165cdd81b7b0dca-576111c45f961-cms-image-000001167_crop_1200.jpg"
+                                alt="Snow"
+                        /></a>
+                        <a href="help.html"
+                            ><button class="btn">Безкоштовна газета</button></a
+                        >
                     </div>
                 </div>
-                <!-- !/CONTENT -->
-                <!-- !FOOTER -->
-                <div class="section-header-bottom">
-                    <ul class="contacts">
-                        <li>
-                            <span>Адреса:</span> вул. Банкова 1/10, офіс 18, м.
-                            Київ
-                        </li>
-                        <li><span>Епошта:</span> FondLozowy@gmail.com</li>
-                        <li><span>Телефон:</span> +380984652533</li>
-                    </ul>
-                </div>
-                <!-- !/FOOTER -->
-            </div>
-        </section>
 
-        <!-- <script src="/js/script.js"></script> -->
+                <!-- !/CONTENT -->
+            </div>
+        </div>
     </body>
 </html>
