@@ -367,7 +367,6 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
- 
   background-size: cover;
 }
 
@@ -606,10 +605,9 @@ body {
 }
 
 .section-header-top-language img:hover {
-  width: 28px;
-  border: 1px solid #999898;
-  -webkit-box-shadow: 0px 0px 2px 2px #ffd000;
-          box-shadow: 0px 0px 2px 2px #ffd000;
+  width: 30px;
+  -webkit-box-shadow: 0px 0px 5px 3px #ffd000;
+          box-shadow: 0px 0px 5px 3px #ffd000;
 }
 
 .section-header-top-language__ua {
@@ -669,10 +667,10 @@ body {
 }
 
 .section-header .content-header h1 {
+  font-weight: 900;
   color: #000000;
   margin-top: 20px;
   text-align: center;
-  text-shadow: 0px 0px 4px white, 0em 0px 4px white;
   -webkit-text-stroke: 0.5px white;
 }
 
@@ -717,7 +715,7 @@ body {
 
 .section-header .content .item .btn {
   position: absolute;
-  width: 94.4%;
+  width: 94.5%;
   top: 85%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

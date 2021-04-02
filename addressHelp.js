@@ -2,11 +2,15 @@ const foto1 = document.querySelector('.foto-1');
 const foto2 = document.querySelector('.foto-2');
 const foto3 = document.querySelector('.foto-3');
 const foto4 = document.querySelector('.foto-4');
+const foto5 = document.querySelector('.foto-5');
+const foto6 = document.querySelector('.foto-6');
 
 const li1 = document.querySelector('.li-1');
 const li2 = document.querySelector('.li-2');
 const li3 = document.querySelector('.li-3');
 const li4 = document.querySelector('.li-4');
+const li5 = document.querySelector('.li-5');
+const li6 = document.querySelector('.li-6');
 
 // ========== CLOSE FOTO ==========
 const fotos = document.querySelectorAll('.foto');
@@ -69,6 +73,20 @@ const CLOSE_FOTO_4 = () => {
         foto4.classList.remove('closeFoto');
     }, 0010);
 };
+const CLOSE_FOTO_5 = () => {
+    foto5.classList.add('closeFoto');
+    foto5.classList.remove('openFoto');
+    setTimeout(() => {
+        foto5.classList.remove('closeFoto');
+    }, 0010);
+};
+const CLOSE_FOTO_6 = () => {
+    foto6.classList.add('closeFoto');
+    foto6.classList.remove('openFoto');
+    setTimeout(() => {
+        foto6.classList.remove('closeFoto');
+    }, 0010);
+};
 
 //========== OPEN FOTO ==========
 // FOTO 1
@@ -79,6 +97,7 @@ foto1.addEventListener('click', () => {
         CLOSE_FOTO_2();
         CLOSE_FOTO_3();
         CLOSE_FOTO_4();
+        CLOSE_FOTO_6();
     }
 });
 li1.addEventListener('click', () => {
@@ -87,6 +106,7 @@ li1.addEventListener('click', () => {
     CLOSE_FOTO_2();
     CLOSE_FOTO_3();
     CLOSE_FOTO_4();
+    CLOSE_FOTO_6();
 });
 
 // FOTO 2
@@ -97,6 +117,8 @@ foto2.addEventListener('click', () => {
         CLOSE_FOTO_1();
         CLOSE_FOTO_3();
         CLOSE_FOTO_4();
+        CLOSE_FOTO_5();
+        CLOSE_FOTO_6();
     }
 });
 li2.addEventListener('click', () => {
@@ -105,6 +127,8 @@ li2.addEventListener('click', () => {
     CLOSE_FOTO_1();
     CLOSE_FOTO_3();
     CLOSE_FOTO_4();
+    CLOSE_FOTO_5();
+    CLOSE_FOTO_6();
 });
 // FOTO 3
 foto3.addEventListener('click', () => {
@@ -114,6 +138,8 @@ foto3.addEventListener('click', () => {
         CLOSE_FOTO_1();
         CLOSE_FOTO_2();
         CLOSE_FOTO_4();
+        CLOSE_FOTO_5();
+        CLOSE_FOTO_6();
     }
 });
 li3.addEventListener('click', () => {
@@ -122,6 +148,8 @@ li3.addEventListener('click', () => {
     CLOSE_FOTO_1();
     CLOSE_FOTO_2();
     CLOSE_FOTO_4();
+    CLOSE_FOTO_5();
+    CLOSE_FOTO_6();
 });
 // FOTO 4
 foto4.addEventListener('click', () => {
@@ -131,6 +159,8 @@ foto4.addEventListener('click', () => {
         CLOSE_FOTO_1();
         CLOSE_FOTO_2();
         CLOSE_FOTO_3();
+        CLOSE_FOTO_5();
+        CLOSE_FOTO_6();
     }
 });
 li4.addEventListener('click', () => {
@@ -139,6 +169,50 @@ li4.addEventListener('click', () => {
     CLOSE_FOTO_1();
     CLOSE_FOTO_2();
     CLOSE_FOTO_3();
+    CLOSE_FOTO_5();
+    CLOSE_FOTO_6();
+});
+// FOTO 5
+foto5.addEventListener('click', () => {
+    if (!foto5.classList.contains('closeFoto')) {
+        foto5.classList.add('openFoto');
+        //close
+        CLOSE_FOTO_1();
+        CLOSE_FOTO_2();
+        CLOSE_FOTO_3();
+        CLOSE_FOTO_4();
+        CLOSE_FOTO_6();
+    }
+});
+li5.addEventListener('click', () => {
+    foto5.classList.add('openFoto');
+    //close
+    CLOSE_FOTO_1();
+    CLOSE_FOTO_2();
+    CLOSE_FOTO_3();
+    CLOSE_FOTO_4();
+    CLOSE_FOTO_6();
+});
+// FOTO 6
+foto6.addEventListener('click', () => {
+    if (!foto6.classList.contains('closeFoto')) {
+        foto6.classList.add('openFoto');
+        //close
+        CLOSE_FOTO_1();
+        CLOSE_FOTO_2();
+        CLOSE_FOTO_3();
+        CLOSE_FOTO_4();
+        CLOSE_FOTO_5();
+    }
+});
+li6.addEventListener('click', () => {
+    foto6.classList.add('openFoto');
+    //close
+    CLOSE_FOTO_1();
+    CLOSE_FOTO_2();
+    CLOSE_FOTO_3();
+    CLOSE_FOTO_4();
+    CLOSE_FOTO_5();
 });
 
 //========== /OPEN FOTO ==========
@@ -216,4 +290,38 @@ li4.onmouseout = function () {
     foto4.classList.remove('hover-foto');
     li4.style.color = 'white';
 };
+// FOTO 5
+foto5.addEventListener('mouseover', () => {
+    foto5.classList.add('hover-foto');
+    li5.classList.add('hover-li');
+});
+foto5.addEventListener('mouseout', () => {
+    foto5.classList.remove('hover-foto');
+    li5.classList.remove('hover-li');
+});
+li5.addEventListener('mouseover', () => {
+    foto5.classList.add('hover-foto');
+    li5.classList.add('hover-li');
+});
+li5.addEventListener('mouseout', () => {
+    foto5.classList.remove('hover-foto');
+    li5.classList.remove('hover-li');
+});
+// FOTO 6
+foto6.addEventListener('mouseover', () => {
+    foto6.classList.add('hover-foto');
+    li6.classList.add('hover-li');
+});
+foto6.addEventListener('mouseout', () => {
+    foto6.classList.remove('hover-foto');
+    li6.classList.remove('hover-li');
+});
+li6.addEventListener('mouseover', () => {
+    foto6.classList.add('hover-foto');
+    li6.classList.add('hover-li');
+});
+li6.addEventListener('mouseout', () => {
+    foto6.classList.remove('hover-foto');
+    li6.classList.remove('hover-li');
+});
 //========== /MOUSEOVER && MOUSEOUT ==========
