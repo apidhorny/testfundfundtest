@@ -348,7 +348,6 @@ template {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 2px 1px 2px black, 0em 0em 3em black;
 }
 
 .section-inner {
@@ -667,11 +666,16 @@ body {
 }
 
 .section-header .content-header h1 {
-  font-weight: 600;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  font-weight: 700;
   color: #000000;
-  margin-top: 20px;
   text-align: center;
-  -webkit-text-stroke: 0.5px white;
+}
+
+.section-header .content-header h1 span {
+  font-weight: 500;
 }
 
 @media (max-width: 854px) {
@@ -724,7 +728,6 @@ body {
 .section-header-content .contacts li:hover {
   -webkit-box-shadow: -8px 12px 14px 1px #ffd000;
           box-shadow: -8px 12px 14px 1px #ffd000;
-  padding: 12px;
   background-color: #0b2b92;
 }
 

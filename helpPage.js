@@ -8,6 +8,13 @@ const li2 = document.querySelector('.li-2');
 const li3 = document.querySelector('.li-3');
 const li4 = document.querySelector('.li-4');
 
+// const imgs = document.querySelectorAll('img');
+// console.log(imgs);
+
+// imgs.forEach((img) => {
+//     img.addEventListener('click', closeFoto);
+// });
+
 // ========== CLOSE FOTO ==========
 const fotos = document.querySelectorAll('.foto');
 
@@ -33,9 +40,8 @@ document.addEventListener('keydown', (e) => {
     }
 });
 // ========== CLOSE FOTO VIA EMPTY CLICK (doesn't work)==========
-// const sidebar = document.querySelector('.content-sidebar');
-// sidebar.addEventListener('click', (e) => {
-//     if (e.target !== fotos) {
+// document.addEventListener('click', (e) => {
+//     if (e.target.className !== 'foto') {
 //         closeFoto();
 //     }
 // });
@@ -81,9 +87,11 @@ foto1.addEventListener('click', () => {
         CLOSE_FOTO_4();
     }
 });
+
 li1.addEventListener('click', () => {
     foto1.classList.add('openFoto');
     //close
+    // CLOSE_FOTO_1();
     CLOSE_FOTO_2();
     CLOSE_FOTO_3();
     CLOSE_FOTO_4();

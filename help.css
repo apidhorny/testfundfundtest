@@ -348,7 +348,6 @@ template {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 2px 1px 2px black, 0em 0em 3em black;
 }
 
 .section-inner {
@@ -667,11 +666,16 @@ body {
 }
 
 .section-header .content-header h1 {
-  font-weight: 600;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  font-weight: 700;
   color: #000000;
-  margin-top: 20px;
   text-align: center;
-  -webkit-text-stroke: 0.5px white;
+}
+
+.section-header .content-header h1 span {
+  font-weight: 500;
 }
 
 @media (max-width: 854px) {
@@ -717,14 +721,9 @@ body {
       grid-template-areas: 'foto1 foto2 foto3 foto4 foto4' 'foto5 foto6 foto7 foto8 foto9' 'foto5 foto10 foto11 foto11 foto12' 'foto13 foto14 foto15 foto16 foto17' 'foto18 foto18 foto15 foto19 foto20';
 }
 
-.section-header-content .content-gallery .hover-foto {
-  -webkit-box-shadow: 0px 0px 5px 7px #ffd000;
-          box-shadow: 0px 0px 5px 7px #ffd000;
-}
-
 .section-header-content .content-gallery .foto {
   position: relative;
-  padding: 0px 0px 30% 0px;
+  padding: 0px 0px 40% 0px;
 }
 
 .section-header-content .content-gallery .foto img {
@@ -740,17 +739,29 @@ body {
 .section-header-content .content-gallery .openFoto {
   position: absolute;
   width: 60%;
-  height: 500px;
-  top: 25%;
+  height: 600px;
+  top: 23%;
   left: 7%;
   z-index: 2;
-  border: none;
+  -webkit-box-shadow: 0px 0px 8px 7px #ffd000;
+          box-shadow: 0px 0px 8px 7px #ffd000;
+  /* Add Animation */
+}
+
+.section-header-content .content-gallery .openFoto img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1190px) {
   .section-header-content .content-gallery .openFoto {
     width: 60%;
-    height: 500px;
+    height: 600px;
     top: 23%;
     left: 4%;
   }
@@ -806,9 +817,9 @@ body {
   width: 100%;
   text-align: center;
   padding: 15px;
-  bottom: 0%;
+  bottom: 0;
   left: 0;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   background-color: rgba(0, 0, 0, 0.603);
 }
@@ -817,39 +828,6 @@ body {
   .section-header-content .content-gallery .openFoto .subtName {
     font-size: 25px;
   }
-}
-
-.section-header-content .content-gallery .openFoto .closeBtn {
-  background-color: rgba(0, 0, 0, 0.575);
-  padding: 3px;
-  position: absolute;
-  right: 0%;
-  font-size: 40px;
-  border: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  border-radius: 6%;
-}
-
-.section-header-content .content-gallery .openFoto .closeBtn:hover {
-  -webkit-box-shadow: -8px 12px 14px 1px #ffd000;
-          box-shadow: -8px 12px 14px 1px #ffd000;
-  padding: 5px;
-  background-color: #0b2b92;
-}
-
-@media (max-width: 576px) {
-  .section-header-content .content-gallery .openFoto .closeBtn {
-    font-size: 20px;
-  }
-}
-
-.section-header-content .content-gallery .closeFoto .subtName {
-  display: block;
-}
-
-.section-header-content .content-gallery .closeFoto .closeBtn {
-  display: block;
 }
 
 .section-header-content .content-gallery .foto-1 {
@@ -1001,11 +979,9 @@ body {
   font-weight: bold;
 }
 
-.section-header-content .content-sidebar .hover-li {
-  color: #ffd000;
-}
-
 .active {
-  border: 3px solid red;
-  font-size: 40px;
+  color: #ffd000;
+  -webkit-box-shadow: 0px 0px 5px 5px #ffd000;
+          box-shadow: 0px 0px 5px 5px #ffd000;
+  cursor: pointer;
 }
