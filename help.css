@@ -434,7 +434,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(0, 0, 0, 0.753);
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.753);
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -448,6 +448,7 @@ body {
 }
 
 .section-header-top .logo .logo-img {
+  margin-left: 3px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
