@@ -1054,6 +1054,11 @@ body {
   list-style-position: outside;
 }
 
+.section-header-content .content-sidebar li a {
+  text-decoration: none;
+  color: white;
+}
+
 @media (max-width: 576px) {
   .section-header-content .content-sidebar li {
     font-size: 12px;
